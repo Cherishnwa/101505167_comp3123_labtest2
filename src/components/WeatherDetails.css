@@ -1,0 +1,61 @@
+.weather-details {
+    font-family: Arial, sans-serif;
+    background-color: #c1a4bc;
+    border: 1px solid #ec4eb7;
+    padding: 30px;
+    border-radius: 25px;
+        /* max-width: 300px;
+        margin: 0 auto; */
+    box-shadow: 0 4px 15px rgb(79, 51, 71);
+}
+
+.details-title {
+    font-size: 24px;
+    font-weight: bold 700;
+    color: #bc169b;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.detail-item {
+    font-size: 18px;
+    background: #c1a4bc;
+    gap: 15px;
+    display: flex;
+    border-radius: 15px;
+   /* justify-content: space-between; */
+    padding: 15px;
+    align-items: center;
+    transition: all 0.3s ease;
+    
+}
+
+.detail-item:hover {
+  background: rgba(255, 255, 255, 0.9); /* More opaque */
+  transform: translateY(-3px); /* Move up */
+  box-shadow: 0 4px 12px rgba(81, 48, 65, 0.1); /* Shadow */
+}
+
+* Emoji icon */
+.detail-icon {
+  font-size: 2rem; /* Large emoji */
+}
+
+.detail-label {
+  font-size: 0.9rem; /* Small */
+  color: #bc169b; /* Gray */
+  margin-bottom: 5px;
+}
+
+/* Value text (e.g., "65%") */
+.detail-value {
+  font-size: 1.2rem; /* Larger */
+  color: #bc169b; /* Dark */
+  font-weight: bold 700; /* Bold */
+}
+
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr; /* One column */
+  }
+}
